@@ -1,0 +1,30 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "globals": {
+    "jest": true
+  },
+  "rules": {
+    "no-unused-vars": "error",
+    "no-undef": "error",
+    "eqeqeq": "error",
+    "no-redeclare": "error",
+    "indent": ["error", 2],
+    "semi": ["error", "always"],
+    "no-console": "error",
+    "curly": "error",
+    "no-unreachable": "error",
+    "quotes": ["error", "single"],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "comma-dangle": ["error", "never"]
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": "eslint:recommended"
+}

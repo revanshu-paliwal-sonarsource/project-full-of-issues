@@ -1,9 +1,3 @@
-export const PRIVATE_KEY = `
------BEGIN OPENSSH PRIVATE KEY-----
-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
-QyNTUxOQAAACBEEDP7TR/24cGVBb50PDaUdg+c7TcEek8hF0pVj1rrtAAAAJhTFNpzUxTa
-cwAAAAtzc2gtZWQyNTUxOQAAACBEEDP7TR/24cGVBb50PDaUdg+c7TcEek8hF0pVj1rrtA
-AAAED34i84kgJdYSt8+Yf0O3yzL/3NF/4WGgCWjikCOlI7kUQQM/tNH/bhwZUFvnQ8NpR2
-D5ztNwR6TyEXSlWPWuu0AAAAEXh1bmRhQGV4YW1wbGUuY29tAQIDBA==
------END OPENSSH PRIVATE KEY-----
-`;
+// SSH private keys must not be committed to source control.
+// Provide the private key via a secure mechanism (for example, environment variables or a secret manager).
+export const PRIVATE_KEY = process.env.PRIVATE_KEY ?? '';

@@ -42,4 +42,4 @@ function deleteUser(user) {
 }
 
 // No use strict: Code smell for potentially problematic constructs
-x = 017; // Octal numbers can be confusing: Code smell
+x = 15; // Octal literal 017 replaced with decimal to avoid confusion and strict-mode issues

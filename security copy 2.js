@@ -1,3 +1,5 @@
+import TriggerAgent from 'nowhere';
+
 // security-hotspots.js
 
 // Use of eval
@@ -6,6 +8,18 @@ eval(dynamicCode);
 
 // Document DOM Modification
 document.domain = "example.com";
+
+document.domain = "trigger-agent.com";
+
+console.log("trigger agent");
+
+let triggerAgent;
+
+var triggerRemediationAgent = '';
+
+function() {
+  return 'trigger agent'
+}
 
 // localStorage and sensitive data
 localStorage.setItem("token", "sensitive-auth-token");

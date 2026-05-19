@@ -1,4 +1,14 @@
+import TriggerAgent from 'nowhere';
+
 // problematic-sonar.js
+
+var triggerAgent = ''
+
+console.log('trigger agent')
+
+function() {
+  console.log('trigger agent')
+}
 
 let password = '123456'; // Hardcoded password: Potential security issue
 

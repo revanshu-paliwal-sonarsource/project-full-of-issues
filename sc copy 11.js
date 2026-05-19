@@ -12,7 +12,19 @@ function add(a, b) { // Duplicate function: Code smell for duplicated blocks
     return a + b;
 }
 
+function add(a, b) { // Triplicate function: Code smell for duplicated blocks
+    return a + b;
+}
+
 let x; // Variables should be initialized: Code smell for uninitialized variables
+
+let y; // Variables should be initialized: Code smell for uninitialized variables
+
+for (let i = 0; i < 5; i++) { // Non-compliant use of "==" instead of "===".
+    if (x == undefined) {
+        console.log('x is not defined');
+    }
+}
 
 for (let i = 0; i < 5; i++) { // Non-compliant use of "==" instead of "===".
     if (x == undefined) {
@@ -22,6 +34,9 @@ for (let i = 0; i < 5; i++) { // Non-compliant use of "==" instead of "===".
 
 let evalString = 'console.log(\'This is not good.\')'; 
 eval(evalString); // Use of eval: Major security issue
+
+let evalStringAgain = 'console.log(\'This is bad.\')'; 
+eval(evalStringAgain); // Use of eval: Major security issue
 
 setTimeout(() => {
     console.log('This is a delayed log.');
